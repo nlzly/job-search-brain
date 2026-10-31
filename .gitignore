@@ -1,6 +1,5 @@
-# Private, per-user workspace and generated exports
+# Private, per-user workspace
 /.local/
-/share/
 /wiki/
 /site/
 /SEARCH_PREFERENCES.md

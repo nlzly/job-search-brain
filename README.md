@@ -49,19 +49,19 @@ Before starting the updated app in a legacy checkout, run `npm run migrate`. It 
 ## Share with a friend
 
 ```powershell
-npm test
-npm run share
+git clone https://github.com/nlzly/job-search-brain.git
+cd job-search-brain
+npm start
 ```
 
-Share **only `share/job-search-brain/`**, or zip that folder. The export copies an explicit allowlist of code, generic documentation, templates and tests, then initializes an empty Git repository. It never copies `.local/`, the prototype, private records, other exports or the original Git history. Move an earlier export aside before exporting again.
+Share the GitHub repository link. Each clone starts with an empty private workspace and opens the preference questionnaire on first run. Everyone's profile, resume, watchlist and searches stay in their own Git-ignored `.local/` folder.
 
-**Old commits can still contain personal data after files are ignored or untracked.** Existing history is intentionally preserved. Use the clean export when sharing; do not send the original `.git` directory.
+Commit application code and generic templates only; keep personal records out of Git.
 
 ## Commands
 
 - `npm start`: dashboard, saved roles and questionnaire.
 - `npm test`: storage, onboarding/API and matching checks using temporary workspaces.
 - `npm run scan`: CLI discovery using the same profile; writes a private timestamped JSON record.
-- `npm run share`: clean source-only export.
 
 See [ATS_DISCOVERY.md](ATS_DISCOVERY.md) for scanner details. The app never applies, contacts recruiters or submits personal information.

@@ -1,6 +1,6 @@
 ﻿# Job Search Brain - agent instructions
 
-This repository contains shareable code and generic templates. All user records belong in `.local/` or the directory set by `JOB_SEARCH_DATA_DIR`. Never commit profiles, resumes, applications, saved roles, company research, search logs, watchlists or exports.
+This repository contains shareable code and generic templates. All user records belong in `.local/` or the directory set by `JOB_SEARCH_DATA_DIR`. Never commit profiles, resumes, applications, saved roles, company research, search logs or watchlists.
 
 ## Context and searching
 
@@ -17,4 +17,4 @@ This repository contains shareable code and generic templates. All user records 
 
 Run `npm test` for storage, matching and onboarding changes. Keep examples generic; never embed a user's preferences or resume signals in code.
 
-`npm run migrate` moves legacy personal records into `.local/` without overwriting existing destinations. `npm run share` creates an allowlisted source-only repository at `share/job-search-brain` without private data or the original Git history. Ignoring or untracking files does not remove historical copies. Leave existing history alone unless the user explicitly requests rewriting it; use the clean export for sharing.
+Share this project through its Git repository. A fresh clone must contain only code and generic templates, with first-run onboarding creating the user's private workspace. `npm run migrate` moves legacy personal records into `.local/` without overwriting existing destinations. Keep private data ignored and out of commits. Do not add an export or share command.
