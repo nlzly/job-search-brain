@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Your search preferences · Job Search Brain</title><link rel="stylesheet" href="/styles.css"><link rel="stylesheet" href="/onboarding.css"></head><body><main class="shell setup">
+<header><div class="eyebrow">JOB SEARCH BRAIN / GET STARTED</div><h1>What would you like to work on?</h1><p>Your answers shape the search. They stay in your local workspace, along with your saved roles and notes.</p></header>
+<p id="loading" role="status">Loading preferences…</p>
+<form id="preferences" class="panel hidden">
+<fieldset><legend>1. The work</legend>
+<label>Target job titles <span>(required, one per line)</span><textarea name="roleTitles" required placeholder="Software Engineer&#10;Product Engineer"></textarea></label>
+<label>Your skills and experience <span>(one per line)</span><textarea name="skills" placeholder="Languages, frameworks, tools and experience you can support with examples"></textarea></label>
+<label>Interests, hobbies and industries <span>(one per line)</span><textarea name="interests" placeholder="What would make the work interesting to you?"></textarea></label><p class="hint">Interests boost relevant roles; they are not requirements.</p></fieldset>
+<fieldset><legend>2. Where and how</legend><p>Where should employers explicitly support hiring? This does not establish work authorization.</p>
+<div class="checks" id="countries"><label><input type="checkbox" name="countries" value="US">United States</label><label><input type="checkbox" name="countries" value="CA">Canada</label><label><input type="checkbox" name="countries" value="GB">United Kingdom</label><label><input type="checkbox" name="countries" value="AU">Australia</label><label><input type="checkbox" name="countries" value="DE">Germany</label><label><input type="checkbox" name="countries" value="FR">France</label><label><input type="checkbox" name="countries" value="ANY">No country filter</label></div>
+<label>Preferred cities or regions <span>(optional, one per line)</span><textarea name="preferredLocations" placeholder="Places you would prefer to work or relocate to"></textarea></label>
+<label>Your timezone<input name="timezone" type="text" required placeholder="Region/City"></label>
+<div class="checks"><label><input type="checkbox" name="workModels" value="remote">Remote</label><label><input type="checkbox" name="workModels" value="hybrid">Hybrid</label><label><input type="checkbox" name="workModels" value="onsite">On site</label></div>
+<label class="check"><input type="checkbox" name="allowUnknownLocation">Include roles with unconfirmed location eligibility for manual review</label></fieldset>
+<fieldset><legend>3. Pay and boundaries</legend>
+<label>Target annual salary in USD <span>(optional)</span><input name="minSalary" type="number" min="0" max="10000000" step="1" placeholder="Leave blank for no target"></label><p class="hint">Lower or undisclosed pay can still appear, with a warning. Equity and bonuses are separate.</p>
+<label>Exclude titles, industries or terms <span>(optional, one per line)</span><textarea name="exclusions" placeholder="Terms that should remove a role from your results"></textarea></label>
+<label class="check"><input type="checkbox" name="includeContract">Include contract and temporary roles</label></fieldset>
+<p id="error" class="error hidden" role="alert"></p><div class="actions"><a href="/saved.html" id="cancel" class="hidden">Cancel</a><button class="primary" id="save" type="submit">Save preferences and continue →</button></div>
+</form><footer>No resume, contact details or work authorization are required here. Add private background documents to your local workspace when ready.</footer>
+</main><script src="/onboarding.js"></script></body></html>

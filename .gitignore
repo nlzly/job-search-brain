@@ -1,0 +1,14 @@
+# Private, per-user workspace and generated exports
+/.local/
+/share/
+/wiki/
+/site/
+/SEARCH_PREFERENCES.md
+/ats_sources.json
+/*.pdf
+/data-modeling-review*.html
+/.env
+/.env.*
+node_modules/
+*.log
+__pycache__/
