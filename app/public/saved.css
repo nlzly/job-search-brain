@@ -1,0 +1,68 @@
+.saved-shell { max-width: 1120px; }
+.saved-shell .top > a { color: var(--green); font-size: 14px; font-weight: 650; white-space: nowrap; text-underline-offset: 3px; }
+.saved-controls { display: grid; grid-template-columns: minmax(240px, 1fr) 230px 180px; gap: 16px; align-items: start; margin: 32px 0 20px; }
+.control { display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.control-label { color: #53625b; font-size: 12px; font-weight: 650; }
+.saved-controls .control > input, .saved-controls .control > select, .date-filter > summary { display: block; width: 100%; height: 46px; margin: 0; padding: 11px 14px; border: 1px solid #d5dfd8; border-radius: 10px; background: white; color: var(--ink); font: inherit; font-size: 14px; line-height: 22px; }
+.control > input::placeholder { color: #7b8881; }
+.control > input:focus-visible, .control > select:focus-visible, summary:focus-visible, a:focus-visible { outline: 3px solid #a9d7c1; outline-offset: 3px; }
+.date-filter { position: relative; min-width: 0; }
+.date-filter > summary { display: flex; align-items: center; justify-content: space-between; gap: 12px; cursor: pointer; list-style: none; }
+.date-filter > summary::-webkit-details-marker { display: none; }
+.date-filter > summary::after { content: ''; width: 7px; height: 7px; border-right: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor; transform: translateY(-2px) rotate(45deg); flex-shrink: 0; }
+.date-filter[open] > summary::after { transform: translateY(2px) rotate(225deg); }
+.date-options { position: absolute; z-index: 2; left: 0; top: calc(100% + 8px); min-width: 100%; max-height: 340px; overflow: auto; padding: 14px; background: white; border: 1px solid var(--line); border-radius: 12px; box-shadow: 0 12px 32px #15211e18; }
+.date-options fieldset { border: 0; margin: 0; padding: 0; }
+.date-options legend { color: #6a7770; font-size: 12px; font-weight: 400; margin-bottom: 8px; }
+.date-options label { display: flex; align-items: center; gap: 10px; padding: 9px 8px; border-radius: 6px; font-size: 14px; white-space: nowrap; cursor: pointer; }
+.date-options label:hover { background: var(--paper); }
+.saved-controls .date-options input { width: 16px; height: 16px; margin: 0; padding: 0; accent-color: var(--green); }
+.date-options .all-dates { border-radius: 0; font-weight: 600; border-bottom: 1px solid var(--line); margin-bottom: 6px; }
+.results-caption { margin: 0 0 18px; color: #66756c; font-size: 13px; line-height: 1.6; }
+.saved-list { display: grid; gap: 20px; }
+.saved-card { padding: 28px 30px; }
+.saved-card-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 20px; }
+.saved-card-heading { min-width: 0; }
+.saved-card .eyebrow { font-size: 12px; color: var(--green); letter-spacing: .08em; }
+.saved-card h2 { margin: 6px 0 12px; font-size: 23px; font-weight: 650; letter-spacing: -.025em; line-height: 1.3; overflow-wrap: anywhere; }
+.saved-score { flex: 0 0 auto; min-width: 66px; padding: 10px; border-radius: 12px; background: var(--pale); color: var(--green); text-align: center; }
+.saved-score strong { display: block; font-size: 23px; line-height: 1.15; letter-spacing: -.04em; }
+.saved-score span { display: block; margin-top: 3px; font-size: 10px; font-weight: 650; letter-spacing: .04em; }
+.saved-meta { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 13px; color: #58685e; line-height: 1.65; }
+.saved-meta span + span { border-left: 1px solid var(--line); padding-left: 14px; }
+.saved-salary { margin: 12px 0 10px; font-size: 15px; font-weight: 600; color: #304b3c; line-height: 1.65; }
+.saved-dates { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; margin: 0 0 20px; color: #6a7770; font-size: 12px; line-height: 1.7; }
+.role-status { display: inline-block; padding: 2px 9px; border-radius: 20px; background: #edf2ef; color: #455f50; font-size: 11px; font-weight: 650; }
+.company-description { border-left: 3px solid #dceae1; padding-left: 16px; margin: 20px 0; }
+.company-description h3 { color: #6a7770; font-size: 11px; font-weight: 650; text-transform: uppercase; letter-spacing: .07em; margin: 0 0 6px; }
+.company-description p { font-size: 14px; line-height: 1.75; color: #58685e; margin: 0; max-width: 78ch; }
+.role-intro { color: #35493d; font-size: 15px; line-height: 1.8; max-width: 78ch; margin: 18px 0; }
+.role-intro p { margin: 0 0 10px; }
+.assessment { margin-top: 22px; border-top: 1px solid var(--line); }
+.saved-card .assessment > summary { cursor: pointer; margin: 0; padding: 17px 0 0; color: var(--green); font-size: 13px; font-weight: 650; }
+.role-body { white-space: normal; margin-top: 24px; max-width: 80ch; overflow-wrap: anywhere; color: #405247; font-size: 14px; line-height: 1.8; }
+.role-body h3 { color: var(--ink); margin: 28px 0 10px; font-size: 16px; line-height: 1.4; letter-spacing: -.015em; }
+.role-body h4 { color: var(--ink); margin: 20px 0 8px; font-size: 14px; }
+.role-body > :first-child { margin-top: 0; }
+.role-body p { margin: 0 0 14px; }
+.role-body ul, .role-body ol { margin: 0 0 18px; padding-left: 22px; }
+.role-body li { padding-left: 3px; margin: 7px 0; }
+.role-body blockquote { margin: 16px 0; padding: 10px 16px; border-left: 3px solid #c9ded1; background: #f5f8f5; color: #5a6b60; }
+.role-body code { background: #edf2ef; border-radius: 4px; padding: 2px 5px; font-size: .9em; }
+.role-body a, .role-intro a, .company-description a { color: var(--green); text-underline-offset: 3px; }
+.role-links { display: flex; flex-wrap: wrap; gap: 12px 24px; margin-top: 20px; }
+.role-links a { color: var(--green); font-size: 13px; font-weight: 650; text-decoration: none; }
+.role-links a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.saved-empty { padding: 32px; text-align: center; border: 1px dashed #cbd8ce; border-radius: 12px; color: #66756c; line-height: 1.7; }
+.saved-shell footer { margin-top: 28px; max-width: 85ch; line-height: 1.8; }
+@media (max-width: 700px) {
+  .saved-controls { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 14px; }
+  .search-control { grid-column: 1 / -1; }
+  .saved-card { padding: 22px 20px; }
+  .saved-card h2 { font-size: 20px; }
+  .saved-card-header { gap: 12px; }
+  .saved-score { min-width: 56px; }
+  .saved-meta { display: block; }
+  .saved-meta span { display: block; }
+  .saved-meta span + span { padding-left: 0; border: 0; }
+}
