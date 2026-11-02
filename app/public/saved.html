@@ -1,9 +1,13 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Job Search Brain · Saved roles</title><link rel="stylesheet" href="/styles.css"><style>
-.saved-controls{display:flex;gap:12px;flex-wrap:wrap;margin:24px 0}.saved-controls input,.saved-controls select{padding:10px;font:inherit;max-width:100%}.saved-list{display:grid;gap:16px}.saved-card{padding:24px}.saved-card h2{margin:8px 0}.saved-card summary{cursor:pointer;margin-top:16px;font-weight:600}.role-body{white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.7;font:inherit;margin-top:18px}.role-links{display:flex;gap:20px;flex-wrap:wrap;margin-top:14px}.saved-card .meta{line-height:1.7}.saved-card .score{float:right}.saved-card .sub{margin-top:8px}
-</style></head><body><main class="shell">
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Job Search Brain · Saved roles</title><link rel="stylesheet" href="/styles.css"><link rel="stylesheet" href="/saved.css"></head><body><main class="shell saved-shell">
 <header class="top"><div><div class="eyebrow">JOB SEARCH BRAIN / SAVED SEARCH RESULTS</div><h1>Roles worth a closer look.</h1><p>Read the fit assessment, requirements and open questions for each saved role.</p></div><a href="/">ATS discovery →</a></header>
-<div class="saved-controls"><label>Search <input id="query" type="search" placeholder="Company, role, skill or concern"></label><label>Found <select id="date"></select></label><label>Status <select id="status"><option value="open">Open</option><option value="all">All statuses</option><option value="unverified">Unverified</option><option value="applied">Applied</option></select></label></div>
-<p id="count" role="status">Loading saved roles…</p><div id="results" class="saved-list"></div>
+<div class="saved-controls">
+  <label class="control search-control"><span class="control-label">Search</span><input id="query" type="search" placeholder="Company, role, skill or concern"></label>
+  <div class="control"><span class="control-label" id="date-label">Found on</span>
+    <details class="date-filter"><summary id="date-summary" aria-labelledby="date-label date-summary">Loading dates…</summary><div class="date-options"><fieldset><legend>Select one or more dates</legend><label class="all-dates"><input id="all-dates" type="checkbox">All dates</label><div id="date"></div></fieldset></div></details>
+  </div>
+  <label class="control"><span class="control-label">Status</span><select id="status"><option value="open">Open</option><option value="all">All statuses</option><option value="unverified">Unverified</option><option value="applied">Applied</option></select></label>
+</div>
+<p id="count" class="results-caption" role="status">Loading saved roles…</p><div id="results" class="saved-list"></div>
 <footer>Scores compare fit with your preferences; they do not predict hiring outcomes. Salary, equity and bonuses are separate. Availability reflects each role's last check.</footer>
 </main><script src="/saved.js"></script></body></html>
